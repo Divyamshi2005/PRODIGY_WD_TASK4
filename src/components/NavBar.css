@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #73839a !important;
+  }
+  
+  
+  .nav-title {
+    flex-grow: 1;
+   color: rgb(255, 255, 255);
+   font-style: italic;
+   font-weight: bolder;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .navbar-list li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  

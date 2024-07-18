@@ -1,0 +1,75 @@
+/* src/components/About.css */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 900px; /* Adjust max-width for better readability */
+  margin: 50px auto; /* Add margin for spacing */
+  padding: 40px;
+  background-color: #d9e2f5; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  transition: opacity 0.5s ease-in-out; /* Example transition for element */
+  z-index: 1000; 
+}
+.about-section.active {
+  right: 0; /* Slide in from right */
+}
+.about-section:hover {
+  opacity: 0.8; /* Example hover effect */
+}
+.profile-pic {
+  margin-right: 30px; /* Adjust margin for spacing */
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic img {
+  width: 200px; /* Adjust size as needed */
+  border-radius: 50%; /* Rounded profile picture */
+  box-shadow: 0 4px 8px rgba(221, 213, 213, 0.1); /* Shadow for profile picture */
+}
+
+.about-content {
+  flex: 1; /* Allow content section to expand */
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.about-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+  
+  transition: opacity 0.5s ease-in-out;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px; /* Add margin for spacing between top and bottom sections */
+}
+
+.about-skills,
+.about-education {
+  flex-basis: 45%; /* Adjust width of skills and education sections */
+}
+
+.skills-list,
+.education-text {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
